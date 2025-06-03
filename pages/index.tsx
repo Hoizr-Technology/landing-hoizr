@@ -7,6 +7,8 @@ import HeroVideoSection from "@/components/sections/heroVideo.section";
 import { HeroBanner } from "@/components/sections/heroBanner.section";
 import { ServicesSection } from "@/components/sections/service.section";
 import { FAQSection } from "@/components/sections/faq.section";
+import { HeroBlogSection } from "@/components/sections/blog.section";
+import Footer from "@/components/sections/footer.section";
 
 export default function Home() {
   return (
@@ -15,7 +17,9 @@ export default function Home() {
       <HeroVideoSection />
       <HeroBanner />
       <ServicesSection />
+      <HeroBlogSection />
       <FAQSection />
+      <Footer />
       {/* Fixed logo in top-left corner */}
       <motion.div
         initial={{ opacity: 0 }}
