@@ -1,4 +1,3 @@
-// index.tsx
 import { HeroBg } from "@/components/common/herobg";
 import { motion } from "motion/react";
 
