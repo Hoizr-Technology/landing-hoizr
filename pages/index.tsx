@@ -5,6 +5,7 @@ import Image from "next/image"; // Make sure to import Next.js Image component
 import TextLogo from "@/assets/logo/text.png"
 import HeroVideoSection from "@/components/sections/heroVideo.section";
 import { HeroBanner } from "@/components/sections/heroBanner.section";
+import { ServicesSection } from "@/components/sections/service.section";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <HeroVideoSection />
       <HeroBanner />
+      <ServicesSection />
       
       {/* Fixed logo in top-left corner */}
       <motion.div
