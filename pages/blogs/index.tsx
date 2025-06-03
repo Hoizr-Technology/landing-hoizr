@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { blogs } from "@/content/blogs";
+import { Blog, blogs } from "@/content/blogs";
 import TextLogo from "@/assets/logo/text.png";
 
 export default function BlogsPage() {
@@ -193,7 +193,7 @@ export default function BlogsPage() {
   );
 }
 
-function BlogCard({ blog, index }: { blog: any; index: number }) {
+function BlogCard({ blog, index }: { blog: Blog; index: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}

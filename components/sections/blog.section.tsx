@@ -173,11 +173,11 @@
 //   );
 // }
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, useAnimationControls } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { blogs } from "@/content/blogs";
+import { Blog, blogs } from "@/content/blogs";
 
 export function HeroBlogSection() {
   const [isHovered, setIsHovered] = useState(false);
@@ -269,7 +269,7 @@ export function HeroBlogSection() {
   );
 }
 
-function BlogCard({ blog }: { blog: any }) {
+function BlogCard({ blog }: { blog: Blog }) {
   return (
     <Link href={`/blogs/${blog.id}`}>
       <div className="min-w-[380px] cursor-pointer group">
