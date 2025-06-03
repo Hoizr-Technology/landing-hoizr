@@ -50,7 +50,7 @@ export const blogs: Blog[] = [
       
       <p>As we prepare for Phase 2 mobile integration, I envision a nightlife landscape where artists launch entire tours from their phones, venues curate seasons like Netflix playlists, and fans discover events through hyperlocal push notifications. The future isn't coming – it's already mixing at the decks.</p>`,
     image:
-      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802767/pexels-wendywei-1190298_dbjh15.jpgs",
+      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802769/pexels-isabella-mendes-107313-332688_vtgnt0.jpg",
     date: "June 3, 2025",
     category: "Industry Trends",
     readTime: "8 min read",
@@ -58,7 +58,7 @@ export const blogs: Blog[] = [
       id: "sp1",
       name: "Sanbedan Paul",
       image:
-        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748911149/IMG_0652_slotkd.heic",
+        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748974724/IMG_0652_slotkd__1_ehtwxq.jpg",
       role: "Founder & CEO",
       description: "Founder of Hoizr. Nightlife technology innovator.",
     },
@@ -116,7 +116,7 @@ export const blogs: Blog[] = [
   
   <p>The most successful DJs aren't just performers – they're media companies. Start building yours today.</p>`,
     image:
-      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802767/dj-branding-digital-age_xjf8a2.jpg",
+      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802767/pexels-ulltangfilms-593345_xlqena.jpg",
     date: "June 10, 2025",
     category: "Artist Development",
     readTime: "6 min read",
@@ -124,10 +124,10 @@ export const blogs: Blog[] = [
       id: "sp1",
       name: "Sanbedan Paul",
       image:
-        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748911149/IMG_0652_slotkd.heic",
+        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748974724/IMG_0652_slotkd__1_ehtwxq.jpg",
       role: "Founder & CEO",
       description:
-        "Founder of Hoizr and restaurant tech platform Chose. Nightlife technology architect.",
+        "A software engineer and founder of Hoizr, Sanbedan is passionate about building tools that bridge tech and entertainment. He previously built “Choose,” a robust restaurant management platform, and brings hands-on experience in full-stack development, scalable systems, and product innovation.",
     },
   },
   {
@@ -213,7 +213,7 @@ export const blogs: Blog[] = [
 
 <p><strong>Coming in Phase 2:</strong> Our <em>Festival Prediction Algorithm</em> will forecast booking probabilities based on your profile strength and historical data.</p>`,
     image:
-      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802767/festival-stage-lights_akq0e9.jpg",
+      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802767/pexels-wendywei-1190298_dbjh15.jpg",
     date: "June 17, 2025",
     category: "Booking Tips",
     readTime: "10 min read",
@@ -221,10 +221,10 @@ export const blogs: Blog[] = [
       id: "sp1",
       name: "Sanbedan Paul",
       image:
-        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748911149/IMG_0652_slotkd.heic",
+        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748974724/IMG_0652_slotkd__1_ehtwxq.jpg",
       role: "Founder & CEO",
       description:
-        "Founder of Hoizr and restaurant tech platform Chose. Nightlife industry innovator.",
+        "A software engineer and founder of Hoizr, Sanbedan is passionate about building tools that bridge tech and entertainment. He previously built “Choose,” a robust restaurant management platform, and brings hands-on experience in full-stack development, scalable systems, and product innovation.",
     },
   },
   {
@@ -294,7 +294,7 @@ export const blogs: Blog[] = [
 
 <p>Remember: Great sets aren't played - they're engineered. The best DJs are architects of human experience. With Hoizr, you're not just selecting tracks - you're designing emotional cathedrals.</p>`,
     image:
-      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802767/dj-set-design_makz0s.jpg",
+      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802762/pexels-caricatte-2231755_wiofsu.jpg",
     date: "June 24, 2025",
     category: "Performance",
     readTime: "7 min read",
@@ -302,10 +302,10 @@ export const blogs: Blog[] = [
       id: "sp1",
       name: "Sanbedan Paul",
       image:
-        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748911149/IMG_0652_slotkd.heic",
+        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748974724/IMG_0652_slotkd__1_ehtwxq.jpg",
       role: "Founder & CEO",
       description:
-        "Founder of Hoizr and restaurant tech platform Chose. Nightlife experience architect.",
+        "A software engineer and founder of Hoizr, Sanbedan is passionate about building tools that bridge tech and entertainment. He previously built “Choose,” a robust restaurant management platform, and brings hands-on experience in full-stack development, scalable systems, and product innovation.",
     },
   },
   {
@@ -359,7 +359,7 @@ export const blogs: Blog[] = [
 
 <p>The most successful agencies aren't just managing artists – they're building scalable talent ecosystems. With Hoizr, you gain the infrastructure to transition from transactional bookings to lasting value creation.</p>`,
     image:
-      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802767/agency-management_tjvq5c.jpg",
+      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802762/pexels-artempodrez-6270257_lq3cjy.jpg",
     date: "July 1, 2025",
     category: "Agency Growth",
     readTime: "9 min read",
@@ -367,10 +367,10 @@ export const blogs: Blog[] = [
       id: "sp1",
       name: "Sanbedan Paul",
       image:
-        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748911149/IMG_0652_slotkd.heic",
+        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748974724/IMG_0652_slotkd__1_ehtwxq.jpg",
       role: "Founder & CEO",
       description:
-        "Founder of Hoizr and restaurant tech platform Chose. Nightlife technology architect.",
+        "A software engineer and founder of Hoizr, Sanbedan is passionate about building tools that bridge tech and entertainment. He previously built “Choose,” a robust restaurant management platform, and brings hands-on experience in full-stack development, scalable systems, and product innovation.",
     },
   },
   {
@@ -429,7 +429,7 @@ export const blogs: Blog[] = [
 
 <p>Tomorrow's most successful venues will operate like tech companies with dancefloors. With Hoizr, you're not just hosting events – you're engineering peak nightlife experiences powered by data.</p>`,
     image:
-      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802767/nightclub-management_xs6b9j.jpg",
+      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802764/pexels-osvaldo-coelho-jr-388501-1117256_oi210m.jpg",
     date: "July 8, 2025",
     category: "Venue Management",
     readTime: "8 min read",
@@ -437,10 +437,10 @@ export const blogs: Blog[] = [
       id: "sp1",
       name: "Sanbedan Paul",
       image:
-        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748911149/IMG_0652_slotkd.heic",
+        "https://res.cloudinary.com/duhefgqh4/image/upload/v1748974724/IMG_0652_slotkd__1_ehtwxq.jpg",
       role: "Founder & CEO",
       description:
-        "Founder of Hoizr and restaurant tech platform Chose. Nightlife experience architect.",
+        "A software engineer and founder of Hoizr, Sanbedan is passionate about building tools that bridge tech and entertainment. He previously built “Choose,” a robust restaurant management platform, and brings hands-on experience in full-stack development, scalable systems, and product innovation.",
     },
   },
 ];

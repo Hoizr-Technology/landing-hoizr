@@ -138,21 +138,6 @@ export function FAQSection() {
             </div>
           ))}
         </div>
-
-        {/* Contact CTA */}
-        <div className="mt-16 text-center">
-          <p className="text-gray-400 mb-6">
-            Still have questions? Our support team is ready to help
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <button className="px-8 py-3 bg-primary text-black rounded-full font-bold hover:bg-yellow-400 transition-colors">
-              Contact Support
-            </button>
-            <button className="px-8 py-3 border border-primary text-primary rounded-full font-bold hover:bg-primary/10 transition-colors">
-              Join Community
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
