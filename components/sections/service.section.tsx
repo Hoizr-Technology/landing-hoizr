@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { IoChevronDown, IoAdd, IoRemove } from "react-icons/io5";
+import { SetStateAction, useState } from "react";
+import { IoChevronDown, IoRemove } from "react-icons/io5";
 
 export function ServicesSection() {
   const [activeItem, setActiveItem] = useState(0);
@@ -197,7 +197,7 @@ Industry Networking Hub
     },
   ];
 
-  const toggleItem = (index: any) => {
+  const toggleItem = (index: SetStateAction<number>) => {
     setActiveItem(activeItem === index ? -1 : index);
   };
 
