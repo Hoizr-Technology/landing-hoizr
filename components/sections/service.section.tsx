@@ -196,24 +196,23 @@ Industry Networking Hub
       ),
     },
   ];
-
   const toggleItem = (index: SetStateAction<number>) => {
     setActiveItem(activeItem === index ? -1 : index);
   };
 
   return (
-    <div className="bg-black text-white py-16 px-4 sm:px-8">
+    <div className="bg-black text-white py-14 px-4 sm:px-6 md:px-10">
       {/* Header */}
-      <div className="max-w-6xl mx-auto mb-16">
-        <h2 className="text-5xl md:text-7xl lg:text-8xl text-center font-bold mb-4">
+      <div className="max-w-6xl mx-auto mb-14">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-bold mb-6 leading-tight">
           <span className="font-chemre text-primary">OUR</span>{" "}
           <span className="font-pinyon text-primary">services</span>
         </h2>
-        <div className="w-full h-px bg-primary mt-8"></div>
+        <div className="w-full h-px bg-primary mt-6" />
       </div>
 
       {/* Accordion */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto space-y-4">
         {services.map((service, index) => (
           <div
             key={service.id}
@@ -221,29 +220,31 @@ Industry Networking Hub
               activeItem === index ? "pb-4" : ""
             }`}
           >
+            {/* Header Row */}
             <div
-              className="flex items-center justify-between py-8 cursor-pointer px-4"
+              className="flex items-center justify-between py-6 sm:py-8 cursor-pointer px-2 sm:px-4"
               onClick={() => toggleItem(index)}
             >
-              <div className="flex items-center gap-6">
+              <div className="flex items-start sm:items-center flex-col sm:flex-row gap-3 sm:gap-6">
                 <span className="text-primary font-mono text-xl min-w-[3rem]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
-                  <h3 className="text-primary text-xl md:text-2xl font-bold">
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+                  <h3 className="text-primary text-lg sm:text-xl md:text-2xl font-bold">
                     {service.title}
                   </h3>
-                  <div className="flex items-center gap-2">
-                    <p className="text-gray-400 text-sm md:text-base">
+                  <div className="flex items-center gap-1">
+                    <p className="text-gray-400 text-sm sm:text-base">
                       {service.subtitle}
                     </p>
                     {activeItem === index && (
-                      <span className="hidden md:inline text-primary">•</span>
+                      <span className="hidden sm:inline text-primary">•</span>
                     )}
                   </div>
                 </div>
               </div>
 
+              {/* Toggle Icon */}
               <div className="flex items-center">
                 {activeItem === index ? (
                   <IoRemove className="w-6 h-6 text-primary" />
@@ -260,10 +261,10 @@ Industry Networking Hub
 
             {/* Expanded Content */}
             {activeItem === index && (
-              <div className="pb-8 px-4 animate-fadeIn">
-                <div className="grid md:grid-cols-3 gap-8 items-start">
+              <div className="pb-8 px-2 sm:px-4 animate-fadeIn">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-8 items-start">
                   {/* Icon */}
-                  <div className="flex justify-center">
+                  <div className="flex justify-center md:justify-start">
                     {service.icon ? (
                       service.icon
                     ) : (
@@ -276,25 +277,23 @@ Industry Networking Hub
                   </div>
 
                   {/* Content */}
-                  <div className="md:col-span-2">
-                    <div className="text-gray-300 leading-relaxed whitespace-pre-line mb-6 space-y-3">
-                      {service.content.split("\n").map((line, i) => (
-                        <p
-                          key={i}
-                          className={
-                            line.includes(":") ? "font-bold text-primary" : ""
-                          }
-                        >
-                          {line}
-                        </p>
-                      ))}
-                    </div>
+                  <div className="md:col-span-2 space-y-4 text-sm sm:text-base leading-relaxed text-gray-300 whitespace-pre-line">
+                    {service.content.split("\n").map((line, i) => (
+                      <p
+                        key={i}
+                        className={
+                          line.includes(":") ? "font-bold text-primary" : ""
+                        }
+                      >
+                        {line}
+                      </p>
+                    ))}
 
                     {/* Login Button */}
                     {service.id !== 4 && (
                       <button
                         onClick={() => window.open(service.loginLink, "_blank")}
-                        className="bg-primary text-black px-4 py-2 font-bold hover:bg-yellow-400 transition-colors flex items-center space-x-2 group"
+                        className="mt-4 bg-primary text-black px-4 py-2 font-bold hover:bg-yellow-400 transition-colors flex items-center space-x-2 group"
                       >
                         <span>Login</span>
                         <svg
