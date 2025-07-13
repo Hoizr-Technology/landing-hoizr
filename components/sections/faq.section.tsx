@@ -54,52 +54,56 @@ export function FAQSection() {
   };
 
   return (
-    <div className="bg-black text-white py-24 px-4 sm:px-8">
+    <div className="bg-black text-white py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl font-bold mb-4">
+        <div className="text-center mb-14">
+          <h2 className="text-4xl md:text-6xl font-bold mb-3 leading-tight">
             <span className="font-chemre text-primary">FREQUENTLY</span>{" "}
             <span className="font-pinyon text-primary">ASKED</span> QUESTIONS
           </h2>
-          <div className="w-48 h-px bg-primary mx-auto mt-6"></div>
+          <div className="w-32 h-px bg-primary mx-auto mt-4"></div>
         </div>
 
-        {/* FAQ Accordion */}
-        <div className="max-w-4xl mx-auto">
+        {/* Accordion */}
+        <div className="max-w-4xl mx-auto divide-y divide-primary/20">
           {faqs.map((faq, index) => (
-            <div key={faq.id} className="border-b border-primary/30 py-6">
+            <div key={faq.id} className="py-6">
               <div
+                role="button"
+                aria-expanded={activeIndex === index}
                 className="flex justify-between items-start cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
-                <div className="flex items-start space-x-6">
-                  <span className="text-primary font-mono text-xl mt-1">
+                <div className="flex items-start gap-4 sm:gap-6">
+                  <span className="text-primary font-mono text-lg sm:text-xl mt-1">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-xl font-medium text-white">
+                  <h3 className="text-base sm:text-lg md:text-xl font-medium text-white">
                     {faq.question}
                   </h3>
                 </div>
 
+                {/* Toggle Icon */}
                 <motion.div
                   animate={{ rotate: activeIndex === index ? 45 : 0 }}
-                  className="text-primary text-2xl ml-4 mt-1"
+                  className="text-primary text-xl sm:text-2xl ml-4 mt-1"
                 >
-                  <div className="relative w-6 h-6">
+                  <div className="relative w-5 h-5 sm:w-6 sm:h-6">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-full h-0.5 bg-primary"></div>
+                      <div className="w-full h-0.5 bg-primary" />
                     </div>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <motion.div
                         className="h-full w-0.5 bg-primary"
                         animate={{ scaleY: activeIndex === index ? 0 : 1 }}
-                      ></motion.div>
+                      />
                     </div>
                   </div>
                 </motion.div>
               </div>
 
+              {/* Collapsible Answer */}
               <AnimatePresence>
                 {activeIndex === index && (
                   <motion.div
@@ -107,15 +111,17 @@ export function FAQSection() {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="overflow-hidden pl-16 pr-8"
+                    className="overflow-hidden pl-4 sm:pl-16 pr-2 sm:pr-6"
                   >
-                    <div className="py-4 text-gray-300">{faq.answer}</div>
+                    <div className="py-4 text-sm sm:text-base text-gray-300 leading-relaxed">
+                      {faq.answer}
+                    </div>
 
-                    {/* Additional info for some questions */}
+                    {/* Conditional Add-Ons */}
                     {faq.id === 1 && (
                       <div className="mt-4 p-4 bg-gray-900/50 rounded-lg border-l-4 border-primary">
                         <p className="font-medium text-primary">Pro Tip:</p>
-                        <p className="mt-1">
+                        <p className="mt-1 text-gray-300 text-sm">
                           Include at least 3 different performance styles to
                           increase booking opportunities by 65%
                         </p>
@@ -123,11 +129,11 @@ export function FAQSection() {
                     )}
 
                     {faq.id === 2 && (
-                      <div className="mt-4 flex items-center space-x-4">
-                        <button className="px-4 py-2 bg-primary text-black rounded-full text-sm font-bold">
+                      <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+                        <button className="px-4 py-2 bg-primary text-black rounded-full text-sm font-bold hover:bg-yellow-400 transition-colors">
                           View Pricing
                         </button>
-                        <button className="px-4 py-2 border border-primary text-primary rounded-full text-sm font-bold">
+                        <button className="px-4 py-2 border border-primary text-primary rounded-full text-sm font-bold hover:bg-primary hover:text-black transition-colors">
                           Compare Plans
                         </button>
                       </div>
