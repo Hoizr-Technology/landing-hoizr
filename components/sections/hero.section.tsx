@@ -3,12 +3,21 @@ import { motion } from "motion/react";
 
 export default function HeroSection() {
   const navigationItems = [
-    "FIND ARTIST",
-    "HOST EVENTS",
-    "FIND EVENTS",
-    "WHY HOIZR",
-    "BLOGS",
-    "FAQ",
+    { label: "FIND ARTIST", href: "https://host.hoizr.com", comingSoon: true },
+    { label: "HOST EVENTS", href: "https://host.hoizr.com", comingSoon: true },
+    {
+      label: "FIND EVENTS",
+      href: "https://artist.hoizr.com",
+      comingSoon: true,
+    },
+    {
+      label: "MANAGE ARTISTS",
+      href: "https://agency.hoizr.com",
+      comingSoon: true,
+    },
+    { label: "WHY HOIZR", href: "#why", comingSoon: false },
+    { label: "BLOGS", href: "#blogs", comingSoon: false },
+    { label: "FAQ", href: "#faq", comingSoon: false },
   ];
 
   return (
@@ -29,22 +38,35 @@ export default function HeroSection() {
         <div className="flex flex-col space-y-1">
           {navigationItems.map((item, index) => (
             <motion.div
-              key={item}
+              key={item.label}
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-              className="group cursor-pointer"
+              className="group cursor-default"
             >
               <div className="flex items-center justify-between border-b border-white/30 hover:border-white/60 transition-all duration-300 min-w-[220px] sm:min-w-[260px] md:min-w-[280px]">
-                <span className="text-white font-medium text-sm tracking-wide group-hover:text-primary transition-colors duration-300">
-                  {item}
-                </span>
-                <motion.span
-                  className="text-white group-hover:text-primary transition-colors duration-300"
-                  whileHover={{ x: 5 }}
+                {item.label}
+
+                <span
+                  className={`text-sm font-medium tracking-wide transition-colors duration-300 ${
+                    item.comingSoon ? "text-primary" : "text-white"
+                  }`}
                 >
-                  →
-                </motion.span>
+                  {item.comingSoon && " COMING SOON"}
+                </span>
+                {!item.comingSoon && (
+                  <a
+                    href={item.href}
+                    className="text-white group-hover:text-primary transition-colors duration-300"
+                  >
+                    →
+                  </a>
+                )}
+                {/* {item.comingSoon && (
+                  <motion.span className="text-primary" whileHover={{ x: 5 }}>
+                    →
+                  </motion.span>
+                )} */}
               </div>
             </motion.div>
           ))}
@@ -92,12 +114,20 @@ export default function HeroSection() {
             }}
           >
             <span className="text-sm sm:text-base text-white/90 pr-8">
-              Top DJs, renowned artist agencies, premier nightlife venues,
-              iconic clubs, festival organizers...
+              Elite DJs. Top-tier agencies. Iconic venues. Global promoters.
+              City-based scenes...
             </span>
             <span className="text-sm sm:text-base text-white/90">
-              Top DJs, renowned artist agencies, premier nightlife venues,
-              iconic clubs, festival organizers...
+              Elite DJs. Top-tier agencies. Iconic venues. Global promoters.
+              City-based scenes...
+            </span>
+            <span className="text-sm sm:text-base text-white/90">
+              Elite DJs. Top-tier agencies. Iconic venues. Global promoters.
+              City-based scenes...
+            </span>
+            <span className="text-sm sm:text-base text-white/90">
+              Elite DJs. Top-tier agencies. Iconic venues. Global promoters.
+              City-based scenes...
             </span>
           </motion.div>
         </motion.div>

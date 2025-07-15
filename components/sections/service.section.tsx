@@ -9,13 +9,14 @@ export function ServicesSection() {
       id: 1,
       title: "FOR ARTISTS",
       subtitle: "Amplify Your Reach & Career",
-      loginLink: "/artist-login",
-      content: `• Discover local gigs matching your style and availability
-• Create multimedia profiles showcasing mixes and performance history
-• Apply to events with 1-click submissions (3 free/month)
-• Negotiate bookings and handle contracts in-platform
-• Message hosts/agencies directly without switching apps
-• Track growth through application success analytics (Pro+)`,
+      url: "artist.hoizr.com/login",
+      content: `• Discover events based on your genre, location, and schedule
+• Build a stunning multimedia profile with mixes, photos, and links
+• Apply to events and agencies directly (Free: 4 events/month)
+• Receive unlimited booking requests from hosts and agencies
+• Negotiate and manage bookings without leaving the platform
+• Track your success, views, and conversion rate with smart analytics (Pro+)
+• Get listed higher in searches and recommendations (Pro & Pro Max)`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center">
           <div className="w-16 h-16 relative">
@@ -36,13 +37,14 @@ export function ServicesSection() {
       id: 2,
       title: "FOR AGENCIES",
       subtitle: "Scale Your Operations",
-      loginLink: "/agency-login",
-      content: `• Manage rosters with performance metrics and availability tracking
-• Submit bulk proposals to multiple events simultaneously
-• Automate email campaigns to venues and talent (Pro tier)
-• Assign team roles for agents and bookers
-• Handle celebrity bookings with specialized tools
-• Generate invoices and track commissions in one dashboard`,
+      loginLink: "agency.hoizr.com/login",
+      content: `• Manage and promote your artist roster with availability & stats
+• Apply to gigs on behalf of your artists (Free: 4/month, 1 artist only)
+• Approach and sign new artists (Pro: 3/month, Pro Max: unlimited)
+• Coordinate with hosts, negotiate bookings, and finalize deals in-app
+• Assign team members, manage roles and responsibilities
+• Run targeted campaigns and pitch decks (Pro & Pro Max)
+• Generate reports, commissions, and invoices from one dashboard`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
           <div className="w-16 h-16 relative">
@@ -96,13 +98,14 @@ export function ServicesSection() {
       id: 3,
       title: "FOR HOSTS & VENUES",
       subtitle: "Curate Perfect Events",
-      loginLink: "/venue-login",
-      content: `• Find ideal DJs by genre, budget and location with AI matching
-• Post gigs with custom requirements and automated scheduling
-• Compare artist applications side-by-side with rating filters
-• Collaborate with co-hosts using role-based permissions
-• Publish events to GrooveLocale with ticketing (Pro+)
-• Manage contracts, riders and payments in a single workflow`,
+      loginLink: "host.hoizr.com/login",
+      content: `• Post events and receive direct applications from artists & agencies
+• Discover performers using smart filters and genre-based AI matching
+• Apply to top artists or agencies directly (Free: 4 artists + 2 agencies/month)
+• Review portfolios, chat, negotiate, and confirm bookings in-app
+• Assign roles to co-hosts or collaborators (Pro+)
+• Publish public-facing event pages with ticketing via Hoizr Locale (Pro Max)
+• Unlock analytics, booking history, and competitive calendar insights (Pro Max)`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
           <div className="w-16 h-16 relative">
@@ -149,19 +152,17 @@ export function ServicesSection() {
       subtitle: "Expanding the Ecosystem",
       loginLink: "/early-access",
       content: `Gear & Equipment Rentals
-• Connect with vetted audio/lighting vendors
-• Reserve backline equipment through integrated booking
-• Manage rider requirements and delivery logistics
+• Rent sound systems, lighting gear, or DJ setups directly from vendors
+• Automate rider checklists and logistics with smart scheduling
 
-Public Event Discovery
-• Sell tickets via GrooveLocale's promotional platform
-• Boost event visibility to local music enthusiasts
-• Analyze audience demographics for future bookings
+Hoizr Locale - Public Event Discovery
+• Sell tickets and promote gigs to your city's music crowd
+• Feature on local nightlife discovery boards (with push alerts)
 
 Industry Networking Hub
-• Join city-specific professional communities
-• Share mix tapes and event highlights
-• Get notified about industry workshops and meetups`,
+• Join pro communities by city, genre, or experience level
+• Share live recordings, photos, and get feedback
+• Access workshops, panels, and career growth tools`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
           <div className="w-16 h-16 relative">
