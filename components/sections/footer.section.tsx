@@ -16,8 +16,6 @@ export default function Footer() {
   const [showForm, setShowForm] = useState<boolean>(false);
 
   const {
-    register,
-    handleSubmit,
     formState: { errors },
     reset,
   } = useForm<FormData>();

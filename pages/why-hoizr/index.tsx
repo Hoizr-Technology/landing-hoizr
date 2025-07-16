@@ -82,7 +82,7 @@ const IndustryProblem = () => {
         <div className="space-y-4 text-gray-300">
           <p className="text-xl">
             The music and nightlife industry thrives on creativity—but behind
-            the scenes, it's pure chaos.
+            the scenes, it&pos;s pure chaos.
           </p>
           <p>
             DJs get booked through scattered DMs and informal chats. Agencies
@@ -90,14 +90,14 @@ const IndustryProblem = () => {
             juggle dozens of artists without a single source of truth.
           </p>
           <p>
-            Bookings fall through. Payments get delayed. Details are lost. It's
-            2025, and nightlife still runs like it's 2005.
+            Bookings fall through. Payments get delayed. Details are lost.
+            It&pos;s 2025, and nightlife still runs like it&pos;s 2005.
           </p>
         </div>
 
         <div className="mt-8 p-4 border-l-4 border-primary bg-black/50">
           <p className="text-2xl font-bold text-primary">
-            It's not a lack of talent. It's a lack of tools.
+            It&pos;s not a lack of talent. It&pos;s a lack of tools.
           </p>
         </div>
       </div>
@@ -144,7 +144,7 @@ const VisionSection = () => {
       <div className="max-w-4xl mx-auto space-y-8 text-gray-300">
         <p className="text-xl">
           Hoizr is built for the real backbone of nightlife—the DJs, agencies,
-          and venues making the magic happen. It's a platform, not a
+          and venues making the magic happen. It&pos;s a platform, not a
           marketplace. We don't take over the relationship. We empower it.
         </p>
 
@@ -158,7 +158,7 @@ const VisionSection = () => {
             “
           </div>
           <p className="text-2xl md:text-3xl italic font-medium">
-            We don't just help you get gigs. We help you grow your career or
+            We don&pos;t just help you get gigs. We help you grow your career or
             business—faster, smarter, and stress-free.
           </p>
           <div className="absolute bottom-0 right-8 translate-y-1/2 bg-black px-4 text-primary text-2xl">
@@ -404,12 +404,12 @@ const ClosingCTA = () => {
         <p className="text-xl">
           You're not here by accident. You've found Hoizr before the ads, before
           the SEO, before the hype. That means you're ahead of the curve—and
-          we're building this platform for people like you.
+          we&pos;re building this platform for people like you.
         </p>
 
         <p className="text-xl">
-          Whether you're a headlining DJ, a growing agency, or a new venue in
-          town: Suscribe early. Get ahead. Stay iconic.
+          Whether you&pos;re a headlining DJ, a growing agency, or a new venue
+          in town: Suscribe early. Get ahead. Stay iconic.
         </p>
       </div>
 
