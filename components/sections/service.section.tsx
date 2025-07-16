@@ -1,5 +1,6 @@
 import { SetStateAction, useState } from "react";
 import { IoChevronDown, IoRemove } from "react-icons/io5";
+import { Music, Users, Calendar, Clock } from "lucide-react";
 
 export function ServicesSection() {
   const [activeItem, setActiveItem] = useState(0);
@@ -18,18 +19,8 @@ export function ServicesSection() {
 • Track your success, views, and conversion rate with smart analytics (Pro+)
 • Get listed higher in searches and recommendations (Pro & Pro Max)`,
       icon: (
-        <div className="w-24 h-24 bg-primary flex items-center justify-center">
-          <div className="w-16 h-16 relative">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <path
-                d="M20 50 Q50 20 80 50 Q50 80 20 50"
-                fill="none"
-                stroke="black"
-                strokeWidth="2"
-              />
-              <circle cx="50" cy="50" r="3" fill="black" />
-            </svg>
-          </div>
+        <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
+          <Music className="w-12 h-12 text-black" />
         </div>
       ),
     },
@@ -47,50 +38,7 @@ export function ServicesSection() {
 • Generate reports, commissions, and invoices from one dashboard`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
-          <div className="w-16 h-16 relative">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <circle
-                cx="35"
-                cy="40"
-                r="8"
-                fill="none"
-                stroke="black"
-                strokeWidth="2"
-              />
-              <circle
-                cx="65"
-                cy="40"
-                r="8"
-                fill="none"
-                stroke="black"
-                strokeWidth="2"
-              />
-              <circle
-                cx="50"
-                cy="65"
-                r="8"
-                fill="none"
-                stroke="black"
-                strokeWidth="2"
-              />
-              <line
-                x1="35"
-                y1="40"
-                x2="50"
-                y2="65"
-                stroke="black"
-                strokeWidth="2"
-              />
-              <line
-                x1="65"
-                y1="40"
-                x2="50"
-                y2="65"
-                stroke="black"
-                strokeWidth="2"
-              />
-            </svg>
-          </div>
+          <Users className="w-12 h-12 text-black" />
         </div>
       ),
     },
@@ -108,41 +56,7 @@ export function ServicesSection() {
 • Unlock analytics, booking history, and competitive calendar insights (Pro Max)`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
-          <div className="w-16 h-16 relative">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <rect
-                x="25"
-                y="40"
-                width="50"
-                height="40"
-                fill="none"
-                stroke="black"
-                strokeWidth="2"
-              />
-              <path
-                d="M25 40 L50 20 L75 40"
-                fill="none"
-                stroke="black"
-                strokeWidth="2"
-              />
-              <line
-                x1="40"
-                y1="55"
-                x2="40"
-                y2="70"
-                stroke="black"
-                strokeWidth="2"
-              />
-              <line
-                x1="60"
-                y1="55"
-                x2="60"
-                y2="70"
-                stroke="black"
-                strokeWidth="2"
-              />
-            </svg>
-          </div>
+          <Calendar className="w-12 h-12 text-black" />
         </div>
       ),
     },
@@ -165,34 +79,7 @@ Industry Networking Hub
 • Access workshops, panels, and career growth tools`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
-          <div className="w-16 h-16 relative">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <circle
-                cx="50"
-                cy="50"
-                r="30"
-                fill="none"
-                stroke="black"
-                strokeWidth="2"
-              />
-              <line
-                x1="50"
-                y1="50"
-                x2="70"
-                y2="50"
-                stroke="black"
-                strokeWidth="3"
-              />
-              <line
-                x1="50"
-                y1="50"
-                x2="50"
-                y2="30"
-                stroke="black"
-                strokeWidth="3"
-              />
-            </svg>
-          </div>
+          <Clock className="w-12 h-12 text-black" />
         </div>
       ),
     },
@@ -294,9 +181,11 @@ Industry Networking Hub
                     {service.id !== 4 && (
                       <button
                         onClick={() => window.open(service.loginLink, "_blank")}
-                        className="mt-4 bg-primary text-black px-4 py-2 font-bold hover:bg-yellow-400 transition-colors flex items-center space-x-2 group"
+                        disabled={true}
+                        className="mt-4 bg-primary cursor-not-allowed  text-black px-4 py-2 font-bold hover:bg-yellow-400 transition-colors flex items-center space-x-2 group"
                       >
-                        <span>Login</span>
+                        {/* <span>Login</span> */}
+                        <span>Coming Soon</span>
                         <svg
                           className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
                           fill="none"

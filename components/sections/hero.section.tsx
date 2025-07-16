@@ -1,5 +1,6 @@
 import { HeroBg } from "@/components/common/herobg";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export default function HeroSection() {
   const navigationItems = [
@@ -15,8 +16,8 @@ export default function HeroSection() {
       href: "https://agency.hoizr.com",
       comingSoon: true,
     },
-    { label: "WHY HOIZR", href: "#why", comingSoon: false },
-    { label: "BLOGS", href: "#blogs", comingSoon: false },
+    { label: "WHY HOIZR", href: "/why-hoizr", comingSoon: false }, // Changed to route
+    { label: "BLOGS", href: "/blogs", comingSoon: false }, // Changed to route
     { label: "FAQ", href: "#faq", comingSoon: false },
   ];
 
@@ -42,32 +43,25 @@ export default function HeroSection() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-              className="group cursor-default"
+              className="group"
             >
-              <div className="flex items-center justify-between border-b border-white/30 hover:border-white/60 transition-all duration-300 min-w-[220px] sm:min-w-[260px] md:min-w-[280px]">
-                {item.label}
-
-                <span
-                  className={`text-sm font-medium tracking-wide transition-colors duration-300 ${
-                    item.comingSoon ? "text-primary" : "text-white"
-                  }`}
-                >
-                  {item.comingSoon && " COMING SOON"}
-                </span>
-                {!item.comingSoon && (
-                  <a
-                    href={item.href}
-                    className="text-white group-hover:text-primary transition-colors duration-300"
-                  >
-                    →
-                  </a>
-                )}
-                {/* {item.comingSoon && (
-                  <motion.span className="text-primary" whileHover={{ x: 5 }}>
-                    →
-                  </motion.span>
-                )} */}
-              </div>
+              {item.comingSoon ? (
+                <div className="flex items-center justify-between border-b border-white/30 hover:border-white/60 transition-all duration-300 min-w-[220px] sm:min-w-[260px] md:min-w-[280px] cursor-default">
+                  {item.label}
+                  <span className="text-sm font-medium tracking-wide text-primary transition-colors duration-300">
+                    COMING SOON
+                  </span>
+                </div>
+              ) : (
+                <Link href={item.href}>
+                  <p className="flex items-center justify-between border-b border-white/30 hover:border-white/60 transition-all duration-300 min-w-[220px] sm:min-w-[260px] md:min-w-[280px] cursor-pointer">
+                    {item.label}
+                    <span className="text-white group-hover:text-primary transition-colors duration-300">
+                      →
+                    </span>
+                  </p>
+                </Link>
+              )}
             </motion.div>
           ))}
         </div>

@@ -429,7 +429,7 @@ Mumbai's Ritviz followed this exact path from Magnetic Fields to Ultra.</p>
 
 <p><strong>Festival slots aren't awarded—they're engineered through strategic data alignment. Your mainstage moment begins with understanding the invisible battlefield.</strong></p>`,
     image:
-      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802767/pexels-thibault-trillet-44912-167637_yvn2ux.jpg",
+      "https://res.cloudinary.com/duhefgqh4/image/upload/v1748802762/pexels-artempodrez-6270272_w7nw26.jpg",
     date: "July 28, 2025",
     category: "Career Strategy",
     readTime: "8 min read",
