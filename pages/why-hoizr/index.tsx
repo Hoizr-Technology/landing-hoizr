@@ -378,8 +378,7 @@ const ProFeatures = () => {
       </h2>
 
       <p className="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-12">
-        With Hoizr Pro and Pro Max, nightlife professionals unlock advanced
-        tools:
+        With Hoizr Pro and Pro +, nightlife professionals unlock advanced tools:
       </p>
 
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">

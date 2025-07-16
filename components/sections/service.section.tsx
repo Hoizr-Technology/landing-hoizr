@@ -17,7 +17,7 @@ export function ServicesSection() {
 • Receive unlimited booking requests from hosts and agencies
 • Negotiate and manage bookings without leaving the platform
 • Track your success, views, and conversion rate with smart analytics (Pro+)
-• Get listed higher in searches and recommendations (Pro & Pro Max)`,
+• Get listed higher in searches and recommendations (Pro & Pro +)`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
           <Music className="w-12 h-12 text-black" />
@@ -31,10 +31,10 @@ export function ServicesSection() {
       loginLink: "agency.hoizr.com/login",
       content: `• Manage and promote your artist roster with availability & stats
 • Apply to gigs on behalf of your artists (Free: 4/month, 1 artist only)
-• Approach and sign new artists (Pro: 3/month, Pro Max: unlimited)
+• Approach and sign new artists (Pro: 3/month, Pro +: unlimited)
 • Coordinate with hosts, negotiate bookings, and finalize deals in-app
 • Assign team members, manage roles and responsibilities
-• Run targeted campaigns and pitch decks (Pro & Pro Max)
+• Run targeted campaigns and pitch decks (Pro & Pro +)
 • Generate reports, commissions, and invoices from one dashboard`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
@@ -52,8 +52,8 @@ export function ServicesSection() {
 • Apply to top artists or agencies directly (Free: 4 artists + 2 agencies/month)
 • Review portfolios, chat, negotiate, and confirm bookings in-app
 • Assign roles to co-hosts or collaborators (Pro+)
-• Publish public-facing event pages with ticketing via Hoizr Locale (Pro Max)
-• Unlock analytics, booking history, and competitive calendar insights (Pro Max)`,
+• Publish public-facing event pages with ticketing via Hoizr Locale (Pro +)
+• Unlock analytics, booking history, and competitive calendar insights (Pro +)`,
       icon: (
         <div className="w-24 h-24 bg-primary flex items-center justify-center rounded-xl">
           <Calendar className="w-12 h-12 text-black" />
