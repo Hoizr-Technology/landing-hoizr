@@ -146,7 +146,7 @@ const ContactUsModal: React.FC<ContactUsModalProps> = ({ isOpen, onClose }) => {
             Message Sent!
           </h3>
           <p className="text-gray-300">
-            Thank you for contacting us. We&pos;ll get back to you soon.
+            {`Thank you for contacting us. We'll get back to you soon.`}
           </p>
         </div>
       ) : (

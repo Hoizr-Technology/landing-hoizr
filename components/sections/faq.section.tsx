@@ -7,45 +7,45 @@ export function FAQSection() {
   const faqs = [
     {
       id: 1,
-      question: "How do I create an artist profile?",
+      question: "What exactly is Hoizr?",
       answer:
-        "Sign up using your professional email, upload your best mixes or performance videos, add your genres and influences, and set your availability. Our verification team will approve your profile within 24 hours.",
+        "Hoizr is a platform designed to simplify how DJs, agencies, and venues connect, collaborate, and manage bookings—all in one place. Whether you’re trying to land gigs or host the perfect night, Hoizr gives you the tools to do it better.",
     },
     {
       id: 2,
-      question: "What's the difference between free and premium accounts?",
+      question: "Is Hoizr live right now?",
       answer:
-        "Free accounts get 3 gig applications/month and basic analytics. Premium ($14.99/month) offers unlimited applications, advanced metrics, and priority placement in search results.",
+        "Not yet! You’re getting a first look at the platform during its early rollout phase. We're polishing features and onboarding handpicked users gradually. If you're seeing this, you're early—and we appreciate it.",
     },
     {
       id: 3,
-      question: "How does payment processing work?",
+      question: "What will I be able to do as an artist?",
       answer:
-        "All payments are handled through our secure platform. Venues pay upfront, funds are held in escrow, and released to artists 24 hours after event completion minus a 5% service fee.",
+        "Once live, artists will be able to create verified profiles, apply to gigs, manage bookings, chat with hosts, get paid securely, and grow their exposure through a unified dashboard.",
     },
     {
       id: 4,
-      question: "Can I manage multiple venues under one account?",
+      question: "How will agencies use Hoizr?",
       answer:
-        "Yes! Our agency dashboard allows you to switch between venues, manage separate calendars, and assign team members with custom permissions.",
+        "Agencies will be able to manage artist rosters, apply to events on behalf of talent, track performance metrics, and discover new DJs using genre/location filters—all within a powerful interface designed for scale.",
     },
     {
       id: 5,
-      question: "What happens if an artist cancels last minute?",
+      question: "How can venues benefit from Hoizr?",
       answer:
-        "Our guarantee protects hosts - we'll immediately find a suitable replacement from our verified talent pool at no extra cost, or provide a full refund.",
+        "Hosts and venues can post events, filter DJs by genre, availability, or budget, negotiate directly, and confirm bookings without messy back-and-forths. Plus, all history, contracts, and payments will be tracked in one place.",
     },
     {
       id: 6,
-      question: "How do I promote my event through GrooveLocale?",
+      question: "Is Hoizr free to use?",
       answer:
-        "Premium accounts can create ticketed events directly on our platform. We'll promote to our user base and handle ticket sales with integrated marketing tools.",
+        "There will be both free and premium plans when we launch. Free users will get access to core features, while Pro plans will unlock advanced tools like analytics, team management, smart alerts, and campaign tools.",
     },
     {
       id: 7,
-      question: "Do you provide contracts and legal documentation?",
+      question: "How do I stay in the loop for launch?",
       answer:
-        "Yes, our platform generates customizable contracts with rider templates. All documents are legally binding and stored securely in your dashboard.",
+        "We recommend following us on socials or checking back on the platform. Early users will receive priority access once beta invites go out. If you’re here now, you're already on our radar. Just reach out to us directly for early access.",
     },
   ];
 
@@ -117,7 +117,7 @@ export function FAQSection() {
                       {faq.answer}
                     </div>
 
-                    {/* Conditional Add-Ons */}
+                    {/* Conditional Add-Ons
                     {faq.id === 1 && (
                       <div className="mt-4 p-4 bg-gray-900/50 rounded-lg border-l-4 border-primary">
                         <p className="font-medium text-primary">Pro Tip:</p>
@@ -137,7 +137,7 @@ export function FAQSection() {
                           Compare Plans
                         </button>
                       </div>
-                    )}
+                    )} */}
                   </motion.div>
                 )}
               </AnimatePresence>

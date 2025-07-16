@@ -4,11 +4,38 @@ import Image from "next/image";
 import { useState } from "react";
 import ContactUsModal from "@/components/common/modals/contactUs.form";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function WhyHoizr() {
   const router = useRouter();
+
   return (
     <div className="relative bg-black min-h-screen">
+      <Head>
+        <title>Why Hoizr - The Smart Booking Platform for Nightlife</title>
+        <meta
+          name="description"
+          content="Discover why Hoizr is built for the future of nightlife. From DJs and agencies to hosts and venues, Hoizr eliminates chaos, boosts visibility, and brings professionalism to bookings."
+        />
+        <meta
+          name="keywords"
+          content="DJ booking platform, nightlife booking, artist management tool, music agency software, event hosting tool, venue booking system"
+        />
+        <meta name="author" content="Hoizr" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Why Hoizr – The Smart Booking Platform for Nightlife"
+        />
+        <meta
+          property="og:description"
+          content="Say goodbye to booking chaos. Hoizr unifies DJs, agencies, and venues with powerful tools for visibility, negotiation, and organization."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hoizr.com/why-hoizr" />
+        <meta property="og:image" content="https://hoizr.com/og-cover.jpg" />
+      </Head>
+
       {/* Fixed Logo */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -19,10 +46,10 @@ export default function WhyHoizr() {
         <Image
           onClick={() => router.push("/")}
           src={TextLogo}
-          alt="Logo"
+          alt="Hoizr Logo"
           width={120}
           height={40}
-          className="w-24 md:w-32"
+          className="w-24 md:w-32 cursor-pointer"
         />
       </motion.div>
 
@@ -47,7 +74,7 @@ export default function WhyHoizr() {
           </motion.p>
         </div>
 
-        {/* Components */}
+        {/* Strategic Content Sections */}
         <div className="space-y-32">
           <IndustryProblem />
           <VisionSection />
@@ -60,7 +87,6 @@ export default function WhyHoizr() {
     </div>
   );
 }
-
 // 1. IndustryProblem Component
 const IndustryProblem = () => {
   return (
@@ -81,8 +107,8 @@ const IndustryProblem = () => {
 
         <div className="space-y-4 text-gray-300">
           <p className="text-xl">
-            The music and nightlife industry thrives on creativity—but behind
-            the scenes, it&pos;s pure chaos.
+            {`The music and nightlife industry thrives on creativity—but behind
+            the scenes, it's pure chaos.`}
           </p>
           <p>
             DJs get booked through scattered DMs and informal chats. Agencies
@@ -90,14 +116,14 @@ const IndustryProblem = () => {
             juggle dozens of artists without a single source of truth.
           </p>
           <p>
-            Bookings fall through. Payments get delayed. Details are lost.
-            It&pos;s 2025, and nightlife still runs like it&pos;s 2005.
+            {`Bookings fall through. Payments get delayed. Details are lost.
+            It's 2025, and nightlife still runs like it's 2005.`}
           </p>
         </div>
 
         <div className="mt-8 p-4 border-l-4 border-primary bg-black/50">
           <p className="text-2xl font-bold text-primary">
-            It&pos;s not a lack of talent. It&pos;s a lack of tools.
+            {`It's not a lack of talent. It's a lack of tools.`}
           </p>
         </div>
       </div>
@@ -143,9 +169,9 @@ const VisionSection = () => {
 
       <div className="max-w-4xl mx-auto space-y-8 text-gray-300">
         <p className="text-xl">
-          Hoizr is built for the real backbone of nightlife—the DJs, agencies,
-          and venues making the magic happen. It&pos;s a platform, not a
-          marketplace. We don't take over the relationship. We empower it.
+          {`Hoizr is built for the real backbone of nightlife—the DJs, agencies,
+          and venues making the magic happen. It's a platform, not a
+          marketplace. We don't take over the relationship. We empower it.`}
         </p>
 
         <p className="text-xl">
@@ -158,8 +184,8 @@ const VisionSection = () => {
             “
           </div>
           <p className="text-2xl md:text-3xl italic font-medium">
-            We don&pos;t just help you get gigs. We help you grow your career or
-            business—faster, smarter, and stress-free.
+            {`We don't just help you get gigs. We help you grow your career or
+            business—faster, smarter, and stress-free.`}
           </p>
           <div className="absolute bottom-0 right-8 translate-y-1/2 bg-black px-4 text-primary text-2xl">
             ”
@@ -402,21 +428,21 @@ const ClosingCTA = () => {
 
       <div className="max-w-3xl mx-auto space-y-8 text-gray-300">
         <p className="text-xl">
-          You're not here by accident. You've found Hoizr before the ads, before
-          the SEO, before the hype. That means you're ahead of the curve—and
-          we&pos;re building this platform for people like you.
+          {`You're not here by accident. You've found Hoizr before the ads,
+          before the SEO, before the hype. That means you're ahead of the
+          curve—and we're building this platform for people like you.`}
         </p>
 
         <p className="text-xl">
-          Whether you&pos;re a headlining DJ, a growing agency, or a new venue
-          in town: Suscribe early. Get ahead. Stay iconic.
+          {`Whether you're a headlining DJ, a growing agency, or a new venue
+          in town: Suscribe early. Get ahead. Stay iconic.`}
         </p>
       </div>
 
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="mt-12 px-8 py-4 bg-primary text-black font-bold text-xl rounded-full hover:bg-yellow-400 transition-colors flex items-center mx-auto"
+        className="mt-12 px-8 py-4 hover:cursp bg-primary text-black font-bold text-xl rounded-full hover:bg-yellow-400 transition-colors flex items-center mx-auto"
         onClick={() => setShowForm(true)}
       >
         Get Started with Hoizr
