@@ -44,7 +44,7 @@ export default function BlogsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="absolute top-6 left-6 z-50"
+          className="absolute md: top-6 left-6 z-50 hidden md:block"
         >
           <Link href="/">
             <Image
@@ -138,7 +138,7 @@ export default function BlogsPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5 + index * 0.1 }}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 border-2 ${
+                className={`px-4 py-2 md:px-8 md:py-3 rounded-full text-xs md:text-base font-semibold transition-all duration-300 border-2 ${
                   selectedCategory === category
                     ? "bg-primary text-black border-primary shadow-lg shadow-primary/30 scale-105"
                     : "bg-transparent text-gray-300 hover:bg-gray-800/50 hover:text-white border-primary/30 hover:border-primary/60 hover:scale-105"
