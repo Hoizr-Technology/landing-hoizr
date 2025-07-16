@@ -4,11 +4,38 @@ import Image from "next/image";
 import { useState } from "react";
 import ContactUsModal from "@/components/common/modals/contactUs.form";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function WhyHoizr() {
   const router = useRouter();
+
   return (
     <div className="relative bg-black min-h-screen">
+      <Head>
+        <title>Why Hoizr - The Smart Booking Platform for Nightlife</title>
+        <meta
+          name="description"
+          content="Discover why Hoizr is built for the future of nightlife. From DJs and agencies to hosts and venues, Hoizr eliminates chaos, boosts visibility, and brings professionalism to bookings."
+        />
+        <meta
+          name="keywords"
+          content="DJ booking platform, nightlife booking, artist management tool, music agency software, event hosting tool, venue booking system"
+        />
+        <meta name="author" content="Hoizr" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Why Hoizr – The Smart Booking Platform for Nightlife"
+        />
+        <meta
+          property="og:description"
+          content="Say goodbye to booking chaos. Hoizr unifies DJs, agencies, and venues with powerful tools for visibility, negotiation, and organization."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hoizr.com/why-hoizr" />
+        <meta property="og:image" content="https://hoizr.com/og-cover.jpg" />
+      </Head>
+
       {/* Fixed Logo */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -19,10 +46,10 @@ export default function WhyHoizr() {
         <Image
           onClick={() => router.push("/")}
           src={TextLogo}
-          alt="Logo"
+          alt="Hoizr Logo"
           width={120}
           height={40}
-          className="w-24 md:w-32"
+          className="w-24 md:w-32 cursor-pointer"
         />
       </motion.div>
 
@@ -47,7 +74,7 @@ export default function WhyHoizr() {
           </motion.p>
         </div>
 
-        {/* Components */}
+        {/* Strategic Content Sections */}
         <div className="space-y-32">
           <IndustryProblem />
           <VisionSection />
@@ -60,7 +87,6 @@ export default function WhyHoizr() {
     </div>
   );
 }
-
 // 1. IndustryProblem Component
 const IndustryProblem = () => {
   return (
@@ -416,7 +442,7 @@ const ClosingCTA = () => {
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="mt-12 px-8 py-4 bg-primary text-black font-bold text-xl rounded-full hover:bg-yellow-400 transition-colors flex items-center mx-auto"
+        className="mt-12 px-8 py-4 hover:cursor-pointer bg-primary text-black font-bold text-xl rounded-full hover:bg-yellow-400 transition-colors flex items-center mx-auto"
         onClick={() => setShowForm(true)}
       >
         Get Started with Hoizr
