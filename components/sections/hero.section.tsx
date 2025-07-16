@@ -46,9 +46,9 @@ export default function HeroSection() {
               className="group"
             >
               {item.comingSoon ? (
-                <div className="flex items-center justify-between border-b border-white/30 hover:border-white/60 transition-all duration-300 min-w-[220px] sm:min-w-[260px] md:min-w-[280px] cursor-default">
+                <div className="flex text:xs md:text-md items-center justify-between border-b border-white/30 hover:border-white/60 transition-all duration-300 min-w-[220px] sm:min-w-[260px] md:min-w-[280px] cursor-default">
                   {item.label}
-                  <span className="text-sm font-medium tracking-wide text-primary transition-colors duration-300">
+                  <span className="text-[9px] md:text-sm font-medium tracking-wide text-primary transition-colors duration-300">
                     COMING SOON
                   </span>
                 </div>
