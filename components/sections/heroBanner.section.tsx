@@ -2,17 +2,19 @@ export function HeroBanner() {
   const locations = [
     "Goa",
     "Mumbai",
+    "Dubai",
     "Bangalore",
     "Delhi",
     "Pune",
     "Hyderabad",
     "Chandigarh",
-    "Jaipur",
     "Manali",
     "Kasol",
     "Kolkata",
-    "Shillong",
-    "Pondicherry",
+    "London",
+    "Berlin",
+    "Bangkok",
+    "Bali",
   ];
 
   return (
@@ -36,23 +38,23 @@ export function HeroBanner() {
       {/* Main content */}
       <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 px-2 sm:px-4">
         <p className="text-black text-base sm:text-lg md:text-xl leading-relaxed">
-          Hoizr moves beyond traditional booking methods such as scattered
-          messaging apps, manual contract handling, and disconnected discovery
-          tools to deliver a{" "}
-          <span className="font-bold">
-            STRUCTURED, LOCATION-INTELLIGENT ECOSYSTEM
-          </span>{" "}
-          that seamlessly integrates artists, agencies, and venues.
+          Hoizr eliminates the chaos of DJ bookings and artist discovery—no more
+          juggling WhatsApp chats, DMs, or outdated spreadsheets. We bring
+          together{" "}
+          <span className="font-bold">ARTISTS, AGENCIES, AND EVENT HOSTS</span>{" "}
+          into a seamless, location-aware platform built specifically for the
+          music and nightlife scene.
         </p>
 
         <p className="text-black text-base sm:text-lg md:text-xl leading-relaxed">
-          This platform empowers users to leverage our growing network spanning
-          Mumbai, Goa, Delhi, and beyond, uncovering opportunities that resonate
-          locally while scaling internationally. Our holistic solution provides
-          end-to-end tools—from AI-powered talent matching to automated event
-          operations—to nurture long-term growth for our users and create{" "}
-          <span className="font-bold">UNFORGETTABLE LIVE EXPERIENCES</span> that
-          stand out.
+          Starting with India&apos;s nightlife capitals—Mumbai, Goa, Delhi, and
+          Bangalore—Hoizr is building a high-performance ecosystem that scales
+          across cities and borders. From{" "}
+          <span className="font-bold">AI-driven talent matchmaking</span> to
+          fully integrated event workflows, we help users unlock new gigs,
+          manage rosters, and deliver{" "}
+          <span className="font-bold">WORLD-CLASS LIVE EXPERIENCES</span>{" "}
+          anywhere, from local clubs to international festivals.
         </p>
       </div>
 

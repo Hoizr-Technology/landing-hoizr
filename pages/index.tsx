@@ -9,10 +9,12 @@ import { ServicesSection } from "@/components/sections/service.section";
 import { FAQSection } from "@/components/sections/faq.section";
 import { HeroBlogSection } from "@/components/sections/blog.section";
 import Footer from "@/components/sections/footer.section";
+import WelcomeModal from "@/components/common/modals/welcome.modal";
 
 export default function Home() {
   return (
     <div className="relative bg-black h-screen">
+      <WelcomeModal />
       <HeroSection />
       <HeroVideoSection />
       <HeroBanner />
