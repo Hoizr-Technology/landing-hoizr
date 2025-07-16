@@ -48,8 +48,8 @@ export function HeroBanner() {
 
         <p className="text-black text-base sm:text-lg md:text-xl leading-relaxed">
           Starting with India&apos;s nightlife capitals—Mumbai, Goa, Delhi, and
-          Bangalore—Hoizr is building a high-performance ecosystem that scales
-          across cities and borders. From{" "}
+          Bangalore—Hoizr will be building a high-performance ecosystem that
+          scales across cities and borders. From{" "}
           <span className="font-bold">AI-driven talent matchmaking</span> to
           fully integrated event workflows, we help users unlock new gigs,
           manage rosters, and deliver{" "}
